@@ -9,9 +9,7 @@ class TransaksiController extends Controller
 {
     public function index()
     {
-        // Ambil data terbaru dulu (latest)
         $transaksi = Transaksi::latest()->get();
-        // Arahkan ke folder transaksi/index.blade.php
         return view('transaksi.index', compact('transaksi'));
     }
 

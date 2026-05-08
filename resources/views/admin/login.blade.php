@@ -41,13 +41,12 @@
             @csrf <div class="login-input-group">
                     <i class="fa-solid fa-envelope"></i>
                     <input type="email" name="email" class="login-input" placeholder="Email Address" 
-                        value="admin@gmail.com" required autofocus>
+                        value="{{ old('email') }}" required autofocus>
                 </div>
 
                 <div class="login-input-group">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" name="password" class="login-input" placeholder="Password" 
-                        value="password123" required>
+                    <input type="password" name="password" class="login-input" placeholder="Password" required>
                 </div>
 
             <button type="submit" class="btn-login-premium">

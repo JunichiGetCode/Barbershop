@@ -7,14 +7,12 @@ use Illuminate\Http\Request;
 
 class BarberController extends Controller
 {
-    // READ (Menampilkan Data)
     public function index()
     {
         $barbers = Barber::all();
         return view('barber.index', compact('barbers'));
     }
 
-    // CREATE (Menambah Data)
     public function store(Request $request)
     {
         $request->validate([
@@ -27,7 +25,6 @@ class BarberController extends Controller
         return redirect()->back()->with('success', 'Barber berhasil ditambahkan!');
     }
 
-    // UPDATE (Edit Data)
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -41,7 +38,6 @@ class BarberController extends Controller
         return redirect()->back()->with('success', 'Data Barber berhasil diupdate!');
     }
 
-    // DELETE (Hapus Data)
     public function destroy($id)
     {
         $barber = Barber::findOrFail($id);
