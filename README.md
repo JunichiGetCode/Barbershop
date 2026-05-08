@@ -124,7 +124,8 @@ The admin dashboard displays real-time statistics including total customers, bar
 
 ## 📸 Screenshots
 
-> *Coming soon — add your app screenshots here*
+> <img width="830" height="486" alt="image" src="https://github.com/user-attachments/assets/6891d107-001d-488e-a74d-5efa70748f77" />
+
 
 ---
 
